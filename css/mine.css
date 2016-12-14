@@ -1,0 +1,222 @@
+text-transform: uppercase;
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнул€ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устран€ем отступы между €чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 		/* убираем отступы по умолчанию дл€ элементов форм (в частности дл€ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл€ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Open Sans';
+}
+a, a:visited { /* пор€док правил дл€ ссылок имеет значение */
+	color: #000;
+	text-decoration: underline;
+}
+a:hover {
+	color: ##FF0000;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+	margin: 0;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+#con {
+	
+	width: 95%;
+	margin: 0 auto;
+}
+.right{
+	text-align: right;
+}
+
+header {
+	border-bottom: 0.125em solid #121;
+}
+header h2{
+ text-align: center;
+}
+
+aside, #right {
+	padding: 0px;
+	width: 20%;
+}
+aside {
+	float: left;
+}
+
+.hor-menu a{
+	font-size: 0.85em;
+}
+
+aside .message {
+	color: red;
+	text-align: center;
+}
+
+#right {
+	float: right;
+}
+
+main {
+	border: 0.125em solid #121;
+	border-top: none;
+	border-bottom: none;
+	margin-left: 20%;
+	padding:0 0px 0 0px;
+	width: 59%;
+}
+
+main h1 {
+	margin: 0;
+}
+
+#pagination {
+	text-align: center;
+
+}
+
+#pagination p {
+	font-size: 110%;
+}
+
+#pagination a {
+	padding: 2px 5px;
+}
+footer {
+	width: 95%;
+	margin: 0 auto;
+	border-top: 2px solid #121;
+}
+footer  p{
+	width: 20%;
+	float: left;
+	text-align: left;
+	margin: 0 0;
+}
+
+.counter {
+	margin-top: 0px;
+	float: right;
+	text-align: right;
+}
+#lastposts {
+	text-align: center;
+    float: center;
+	width: 45%;
+	margin-left: 28%;
+}
+.reg table{
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1065px){
+	input[type="text"], input[type="password"] {
+		width: 170px;
+	}
+
+}
+
+@media screen and (max-width:1000px){
+	input[type="text"], input[type="password"] {
+		width: 130px;
+	}
+
+}
+
+@media screen and (max-width:850px){
+	input[type="text"], input[type="password"] {
+	width: 100px;
+	}
+
+}
+
+@media screen and (max-width:770px){ 
+
+	input[type="text"], input[type="password"] {
+	width: 80px;
+	}
+	
+	
+}
+
+@media screen and (max-width:770px){ 
+
+	input[type="text"], input[type="password"] {
+	width: 70px;
+	}
+}
