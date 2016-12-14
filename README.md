@@ -1,0 +1,2 @@
+# mycompanyuz
+my first repository
